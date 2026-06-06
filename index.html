@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EgorBron's personal page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100dvh;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .left-panel {
+      text-align: left;
+    }
+
+    .right-panel {
+      text-align: right;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        align-items: flex-start;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .left-panel {
+        text-align: justify;
+      }
+
+      .right-panel {
+        text-align: center;
+      }
+
+      .links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-panel">
+        <h1>Yegor Bron (EgorBron)</h1>
+        <p>Hello! I am a 19 y.o. fullstack developer.</p>
+        <p>Making software and utils to make all simpler. Hosting online games in the rest of the time.</p>
+        <p>Automation is the future.</p>
+        <div class="links">
+          <a href="mailto:bron@blusutils.net">email</a>
+          <a href="https://egorbronn.t.me/">telegram</a>
+          <a href="https://github.com/EgorBron">github</a>
+          <a href="ru.html">эта страница на русском</a>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <img src="https://avatars.githubusercontent.com/u/71507444?s=200&v=4" alt="EgorBron's avatar">
+        <p>“Yeah, that looks good.”</p>
+        <p><small>(the page looks a bit stubby because it doesn't need anything else, for real)</small></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
